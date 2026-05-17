@@ -28,7 +28,7 @@ const SITE_CONTENT = {
     eyebrow: "Services",
     title: "NDIS Disability Support Services in Adelaide",
     description:
-      "Ostara Living provides flexible disability support services for self-managed and plan-managed NDIS participants across Adelaide, focused on independence and everyday living.",
+      "Explore flexible, participant-centred support options for self-managed and plan-managed NDIS participants across Adelaide. Choose a service below to learn how Ostara Living can support your routine, independence, and community life.",
     ctaTitle: "Not sure which support is right for you?",
     ctaDescription:
       "We’ll guide you based on your needs and help you take the next step.",
@@ -121,18 +121,6 @@ const TRUST_METRICS = [
   { value: "Trusted", label: "Reliable local support workers" },
 ];
 
-const HERO_ILLUSTRATION_NOTES = [
-  "Participant-first support",
-  "Flexible daily living",
-  "Professional care coordination",
-];
-
-const SERVICE_PROMISES = [
-  "Clear service explanations",
-  "Simple, mobile-friendly enquiry journey",
-  "Professional visual presentation built around trust",
-];
-
 const AUDIENCE_PATHWAYS = [
   {
     title: "Participants",
@@ -183,12 +171,6 @@ const WHY_CHOOSE_US = {
   ],
 };
 
-const HERO_IMPACT_POINTS = [
-  "Daily living support designed around participant preferences",
-  "A smaller-provider feel with more responsive communication",
-  "Simple enquiry pathways for participants, families, and coordinators",
-];
-
 const HERO_WELCOME_POINTS = [
   "NDIS support Adelaide families can trust",
   "Reliable support worker Adelaide services",
@@ -199,12 +181,6 @@ const HERO_WELCOME_STATS = [
   { value: "Adelaide", label: "Disability support Adelaide" },
   { value: "NDIS", label: "NDIS support Adelaide" },
   { value: "Local", label: "Support worker Adelaide" },
-];
-
-const HERO_STATS = [
-  { value: "Adelaide", label: "Disability support Adelaide" },
-  { value: "NDIS", label: "Self-managed and plan-managed support" },
-  { value: "Local", label: "Trusted local support workers" },
 ];
 
 const TESTIMONIAL_STORIES = [
@@ -315,24 +291,28 @@ const SERVICES_PAGE_GROUPS = [
     items: [
       {
         title: "Personal Care",
+        serviceId: "personal-care",
         description:
           "Respectful personal care support focused on dignity and independence.",
         points: ["Hygiene support", "Daily routines"],
       },
       {
         title: "Daily Living Assistance",
+        serviceId: "daily-living-assistance",
         description:
           "Support with everyday household tasks and routines.",
         points: ["Cleaning", "Meal preparation"],
       },
       {
         title: "Community Participation",
+        serviceId: "community-participation",
         description:
           "Helping participants stay active and engaged in the community.",
         points: ["Social activities", "Appointments"],
       },
       {
         title: "Transport Support",
+        serviceId: "transport-support",
         description:
           "Safe and reliable transport for daily activities.",
         points: ["Appointments", "Community access"],
@@ -344,12 +324,14 @@ const SERVICES_PAGE_GROUPS = [
     items: [
       {
         title: "Life Skills Development",
+        serviceId: "life-skills-development",
         description:
           "Building confidence through practical skills and routines.",
         points: ["Routine development", "Independent skills"],
       },
       {
         title: "Mentoring & Routine Support",
+        serviceId: "mentoring-routine-support",
         description:
           "Ongoing support for structure and personal growth.",
         points: ["Routine support", "One-on-one mentoring"],
@@ -361,12 +343,14 @@ const SERVICES_PAGE_GROUPS = [
     items: [
       {
         title: "1:1 Support",
+        serviceId: "one-to-one-support",
         description:
           "Personalised support tailored to individual needs.",
         points: ["Individual care", "Flexible support"],
       },
       {
         title: "2:1 Support",
+        serviceId: "two-to-one-support",
         description:
           "Additional support for higher needs.",
         points: ["Complex support", "Increased assistance"],
@@ -374,6 +358,153 @@ const SERVICES_PAGE_GROUPS = [
     ],
   },
 ];
+
+const SERVICE_LANDING_PAGES = {
+  "personal-care": {
+    title: "Personal Care",
+    eyebrow: "Respectful Daily Support",
+    image: "/personal-care-photo.png",
+    imagePosition: "62% center",
+    color: "#1098d5",
+    intro:
+      "Personal care should feel respectful, calm, and centred around the participant. Ostara Living supports daily routines in a way that protects dignity, encourages independence, and keeps the participant in control wherever possible.",
+    includes: [
+      "Showering, hygiene, dressing, and grooming support",
+      "Morning, evening, and daily routine assistance",
+      "Support that respects privacy, comfort, culture, and personal preference",
+    ],
+    approach:
+      "We take time to understand how each participant prefers to be supported, then build a reliable routine around their needs.",
+    outcome:
+      "The goal is to help participants feel comfortable, respected, and ready for their day.",
+  },
+  "daily-living-assistance": {
+    title: "Daily Living Assistance",
+    eyebrow: "Practical Help At Home",
+    image: "/daily-living-photo.png",
+    imagePosition: "50% center",
+    color: "#22c55e",
+    intro:
+      "Daily living support helps participants manage everyday tasks at home with more confidence and less pressure. Support is flexible and shaped around what matters most in the participant’s daily routine.",
+    includes: [
+      "Cleaning, tidying, laundry, and household routines",
+      "Meal preparation and support with simple daily tasks",
+      "Building safer, calmer, and more manageable home routines",
+    ],
+    approach:
+      "We work alongside participants, so support feels practical, respectful, and useful.",
+    outcome:
+      "The goal is to help home life feel more organised, comfortable, and manageable.",
+  },
+  "community-participation": {
+    title: "Community Participation",
+    eyebrow: "Connection And Confidence",
+    image: "/community-participation-photo.png",
+    imagePosition: "50% center",
+    color: "#12c7c1",
+    intro:
+      "Community participation is about helping participants stay connected to people, places, activities, and opportunities that matter to them. Support can be social, practical, confidence-building, or routine-based.",
+    includes: [
+      "Social outings, community activities, and local events",
+      "Support attending appointments, programs, or activities",
+      "Encouragement to build confidence in community settings",
+    ],
+    approach:
+      "We support participants at their pace, with attention to comfort, communication, and choice.",
+    outcome:
+      "The goal is to help participants feel included, confident, and connected.",
+  },
+  "transport-support": {
+    title: "Transport Support",
+    eyebrow: "Safe Everyday Access",
+    image: "/transport-support-photo.png",
+    imagePosition: "50% center",
+    color: "#f59e0b",
+    intro:
+      "Transport support helps participants get where they need to go safely and reliably. This can include appointments, community access, shopping, social activities, or everyday errands.",
+    includes: [
+      "Transport to appointments and community activities",
+      "Support getting in and out safely where needed",
+      "Reliable planning around time, location, and participant needs",
+    ],
+    approach:
+      "We keep transport support calm, planned, and centred around the participant’s routine.",
+    outcome:
+      "The goal is to make everyday access easier, safer, and less stressful.",
+  },
+  "life-skills-development": {
+    title: "Life Skills Development",
+    eyebrow: "Building Independence",
+    image: "/life-skills-photo.png",
+    imagePosition: "50% center",
+    color: "#2153a5",
+    intro:
+      "Life skills support helps participants build confidence with practical everyday tasks. Support can focus on routines, communication, planning, home skills, community confidence, and independence.",
+    includes: [
+      "Developing routines and everyday problem-solving skills",
+      "Support with planning, organising, and practical tasks",
+      "Encouragement to build confidence step by step",
+    ],
+    approach:
+      "We focus on small, meaningful progress that feels achievable for the participant.",
+    outcome:
+      "The goal is to help participants feel more capable, confident, and independent.",
+  },
+  "mentoring-routine-support": {
+    title: "Mentoring & Routine Support",
+    eyebrow: "Structure And Confidence",
+    image: "/mentoring-routine-photo.png",
+    imagePosition: "50% center",
+    color: "#8b5cf6",
+    intro:
+      "Mentoring and routine support gives participants consistent one-to-one guidance. It can help with motivation, structure, confidence, planning, and building positive daily habits.",
+    includes: [
+      "One-to-one mentoring and encouragement",
+      "Routine building and weekly structure",
+      "Support with goals, confidence, and personal growth",
+    ],
+    approach:
+      "We build trust through consistency, respectful communication, and participant-led support.",
+    outcome:
+      "The goal is to help participants feel supported, steady, and more confident in everyday life.",
+  },
+  "one-to-one-support": {
+    title: "1:1 Support",
+    eyebrow: "Personalised Support",
+    image: "/personal-care-photo.png",
+    imagePosition: "62% center",
+    color: "#1098d5",
+    intro:
+      "1:1 support gives participants focused assistance from one support worker. It is flexible and can be shaped around personal care, daily living, community access, routines, or confidence-building.",
+    includes: [
+      "Individual support based on participant needs",
+      "Flexible assistance at home or in the community",
+      "Support that adapts to goals, preferences, and routine",
+    ],
+    approach:
+      "We listen first, then shape support around what helps the participant feel safe, respected, and understood.",
+    outcome:
+      "The goal is to provide reliable support that feels personal, calm, and consistent.",
+  },
+  "two-to-one-support": {
+    title: "2:1 Support",
+    eyebrow: "Additional Assistance",
+    image: "/daily-living-photo.png",
+    imagePosition: "50% center",
+    color: "#22c55e",
+    intro:
+      "2:1 support may suit participants who need a higher level of assistance, extra supervision, or more support with complex routines. The focus remains on safety, dignity, and participant choice.",
+    includes: [
+      "Additional support for higher assistance needs",
+      "Support with complex routines or community access",
+      "A calm and planned approach with clear communication",
+    ],
+    approach:
+      "We work carefully with participants, families, and relevant supports to understand what level of assistance is appropriate.",
+    outcome:
+      "The goal is to help participants feel safer, supported, and included while receiving the right level of help.",
+  },
+};
 
 const NAV_ITEMS = [
   { label: "Home", page: "home" },
@@ -603,16 +734,6 @@ function LogoBlock({ onClick }) {
   );
 }
 
-function HeroIllustration() {
-  return (
-    <div className="hero-illustration" aria-hidden="true">
-      <div className="hero-illustration-glow hero-illustration-glow-a" />
-      <div className="hero-illustration-glow hero-illustration-glow-b" />
-      <img src="/hero-luxury-support.svg" alt="" className="hero-illustration-art" />
-    </div>
-  );
-}
-
 function HeroWelcomePanel() {
   return (
     <div className="hero-welcome-card">
@@ -657,6 +778,14 @@ function Header({ page, setPage, menuOpen, setMenuOpen }) {
     setMenuOpen(false);
   };
 
+  const isActiveNav = (itemPage) => {
+    if (itemPage === "services") {
+      return page === "services" || page.startsWith("service:");
+    }
+
+    return page === itemPage;
+  };
+
   return (
     <header className="site-header">
       <LogoBlock onClick={() => handleNavigate("home")} />
@@ -676,7 +805,7 @@ function Header({ page, setPage, menuOpen, setMenuOpen }) {
           <button
             key={item.page}
             type="button"
-            className={`nav-button ${page === item.page ? "is-active" : ""}`}
+            className={`nav-button ${isActiveNav(item.page) ? "is-active" : ""}`}
             onClick={() => handleNavigate(item.page)}
           >
             {item.label}
@@ -827,32 +956,6 @@ function FeaturedServicePanel({ service, setPage, transitioning }) {
   );
 }
 
-function ServiceSummaryCard({ item, index }) {
-  return (
-    <article className="service-summary-card">
-      <div
-        className="service-summary-number"
-        style={{
-          background:
-            index % 2 === 0 ? "rgba(16,152,213,0.12)" : "rgba(34,197,94,0.12)",
-          color: index % 2 === 0 ? "#1098d5" : "#22a55b",
-        }}
-      >
-        {index + 1}
-      </div>
-      <h3>{item.title}</h3>
-      <p>{item.text}</p>
-      <div className="mini-feature-list">
-        {item.highlights.slice(0, 2).map((point) => (
-          <span key={point} className="mini-feature-chip">
-            {point}
-          </span>
-        ))}
-      </div>
-    </article>
-  );
-}
-
 function HandPointerIcon() {
   return (
     <svg
@@ -865,34 +968,6 @@ function HandPointerIcon() {
         fill="currentColor"
       />
     </svg>
-  );
-}
-
-function HomeServiceCard({ item, index }) {
-  return (
-    <article className="home-service-card">
-      <span className="home-service-index">0{index + 1}</span>
-      <h3>{item.title}</h3>
-      <p>{item.description}</p>
-    </article>
-  );
-}
-
-function AudienceCard({ item }) {
-  return (
-    <article className="audience-card">
-      <h3>{item.title}</h3>
-      <p>{item.description}</p>
-    </article>
-  );
-}
-
-function ValueCard({ text, index }) {
-  return (
-    <article className="value-card">
-      <span className="value-card-index">0{index + 1}</span>
-      <p>{text}</p>
-    </article>
   );
 }
 
@@ -948,41 +1023,20 @@ function StorySlider({ activeIndex, setActiveIndex }) {
   );
 }
 
-function ServiceDetailCard({ item }) {
+function ServicesPageCard({ item, setPage }) {
   return (
-    <article className="service-detail-card">
-      <div className="service-detail-image-wrap">
-        <SmartImage
-          src={item.image}
-          fallbackSrc={createPlaceholderImage(
-            item.title,
-            item.placeholderHint,
-            item.color,
-          )}
-          alt={item.title}
-          className="service-detail-image"
-          style={{ objectPosition: item.imagePosition || "center center" }}
-        />
-        <div className="service-detail-title">{item.title}</div>
-      </div>
-      <div className="service-detail-body">
-        <p>{item.text}</p>
-        <div className="feature-list is-compact">
-          {item.highlights.map((point) => (
-            <div key={point} className="feature-item">
-              <span className="feature-dot" />
-              <span>{point}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </article>
-  );
-}
-
-function ServicesPageCard({ item }) {
-  return (
-    <article className="services-page-card">
+    <button
+      type="button"
+      className="services-page-card"
+      onClick={() => setPage(`service:${item.serviceId}`)}
+      style={{
+        width: "100%",
+        textAlign: "left",
+        cursor: "pointer",
+        border: "1px solid rgba(31, 58, 95, 0.08)",
+        transition: "transform 180ms ease, box-shadow 180ms ease",
+      }}
+    >
       <h3>{item.title}</h3>
       <p>{item.description}</p>
       <div className="services-page-points">
@@ -993,7 +1047,178 @@ function ServicesPageCard({ item }) {
           </div>
         ))}
       </div>
-    </article>
+      <span
+        style={{
+          display: "inline-flex",
+          marginTop: "1rem",
+          color: "#1098d5",
+          fontWeight: 800,
+        }}
+      >
+        View service
+      </span>
+    </button>
+  );
+}
+
+function ServiceLandingPage({ service, setPage, setService, setEnquiryForm }) {
+  const fallbackSrc = createPlaceholderImage(
+    service.title,
+    service.eyebrow,
+    service.color,
+  );
+
+  const handleRequestSupport = () => {
+    setService(service.title);
+    setEnquiryForm((previous) => ({
+      ...previous,
+      support: service.title,
+    }));
+    setPage("contact");
+  };
+
+  return (
+    <section
+      className="content-section"
+      style={{
+        paddingTop: "clamp(2rem, 5vw, 4rem)",
+        paddingBottom: "clamp(2rem, 5vw, 4rem)",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1180px",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "clamp(1.5rem, 4vw, 3rem)",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <button
+            type="button"
+            onClick={() => setPage("services")}
+            style={{
+              border: 0,
+              borderRadius: "999px",
+              padding: "0.72rem 1rem",
+              marginBottom: "1.2rem",
+              background: "rgba(16, 152, 213, 0.1)",
+              color: "#1f3a5f",
+              fontWeight: 800,
+              cursor: "pointer",
+            }}
+          >
+            Back to services
+          </button>
+
+          <span className="section-eyebrow">{service.eyebrow}</span>
+          <h1 className="page-heading">{service.title}</h1>
+          <p
+            className="section-copy"
+            style={{
+              maxWidth: "680px",
+              fontSize: "clamp(1rem, 1.5vw, 1.16rem)",
+              lineHeight: 1.75,
+            }}
+          >
+            {service.intro}
+          </p>
+
+          <div className="button-row" style={{ marginTop: "1.4rem" }}>
+            <button
+              type="button"
+              className="button button-primary"
+              onClick={handleRequestSupport}
+            >
+              Request This Support
+            </button>
+            <button
+              type="button"
+              className="button button-secondary"
+              onClick={() => setPage("services")}
+            >
+              View All Services
+            </button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            minHeight: "360px",
+            borderRadius: "28px",
+            overflow: "hidden",
+            background: "rgba(255, 255, 255, 0.72)",
+            boxShadow: "0 28px 70px rgba(31, 58, 95, 0.16)",
+            border: "1px solid rgba(255, 255, 255, 0.8)",
+          }}
+        >
+          <SmartImage
+            src={service.image}
+            fallbackSrc={fallbackSrc}
+            alt={service.title}
+            className="featured-image"
+            style={{
+              width: "100%",
+              height: "100%",
+              minHeight: "360px",
+              objectFit: "cover",
+              objectPosition: service.imagePosition || "center center",
+              display: "block",
+            }}
+          />
+        </div>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "1180px",
+          margin: "clamp(2rem, 5vw, 4rem) auto 0",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "1rem",
+        }}
+      >
+        <article className="services-page-card">
+          <h3>What support can include</h3>
+          <div className="feature-list">
+            {service.includes.map((item) => (
+              <div key={item} className="feature-item">
+                <span className="feature-dot" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </article>
+
+        <article className="services-page-card">
+          <h3>How we approach it</h3>
+          <p>{service.approach}</p>
+        </article>
+
+        <article className="services-page-card">
+          <h3>What participants can expect</h3>
+          <p>{service.outcome}</p>
+        </article>
+      </div>
+
+      <div className="services-page-cta">
+        <h2 className="services-page-cta-title">
+          Want support that feels right for you?
+        </h2>
+        <p className="section-copy">
+          Tell us what you need, what matters to you, and what kind of routine you want support with.
+        </p>
+        <button
+          type="button"
+          className="button button-primary"
+          onClick={handleRequestSupport}
+        >
+          Request Support
+        </button>
+      </div>
+    </section>
   );
 }
 
@@ -1145,18 +1370,6 @@ function HomePage({
           </div>
         </div>
 
-        {SITE_CONTENT.hero.eyebrow ? (
-          <div className="hero-top-layout">
-            <Reveal delay={70}>
-              <div className="hero-quote-banner">
-                <span className="hero-quote-mark">“</span>
-                <span className="hero-quote-text">{SITE_CONTENT.hero.eyebrow}</span>
-                <span className="hero-quote-mark">”</span>
-              </div>
-            </Reveal>
-          </div>
-        ) : null}
-
         <div className="hero-showcase">
           <Reveal className="hero-stack-column" delay={120}>
             <HeroCardStack
@@ -1302,7 +1515,7 @@ function ServicesPage({ setPage }) {
                   key={item.title}
                   delay={groupIndex * 60 + itemIndex * 50}
                 >
-                  <ServicesPageCard item={item} />
+                  <ServicesPageCard item={item} setPage={setPage} />
                 </Reveal>
               ))}
             </div>
@@ -1355,132 +1568,132 @@ function ContactPage({
       <div className="contact-layout">
         <Reveal delay={40}>
           <div className="contact-info-card">
-          <div className="contact-info-header">
-            <LogoBlock />
-          </div>
-
-          <div className="contact-glass-box">
-            <span className="section-eyebrow">{SITE_CONTENT.contact.eyebrow}</span>
-            <h2 className="contact-title">{SITE_CONTENT.contact.title}</h2>
-            <p className="contact-copy">{SITE_CONTENT.contact.description}</p>
-            <div className="feature-list is-compact">
-              {SITE_CONTENT.contact.promises.map((item) => (
-                <div key={item} className="feature-item">
-                  <span className="feature-dot" />
-                  <span>{item}</span>
-                </div>
-              ))}
+            <div className="contact-info-header">
+              <LogoBlock />
             </div>
 
-            <div className="contact-details">
-              <h3>{SITE_CONTENT.contact.infoTitle}</h3>
-              {CONTACT_DETAILS.map((item) => (
-                <div key={item.label} className="contact-detail-row">
-                  <span>{item.label}</span>
-                  <strong>
-                    {item.label === "Email" ? (
-                      <a href={`mailto:${item.value}`}>{item.value}</a>
-                    ) : item.label === "Phone" ? (
-                      <a href={`tel:${item.value}`}>{item.value}</a>
-                    ) : (
-                      item.value
-                    )}
-                  </strong>
-                </div>
-              ))}
+            <div className="contact-glass-box">
+              <span className="section-eyebrow">{SITE_CONTENT.contact.eyebrow}</span>
+              <h2 className="contact-title">{SITE_CONTENT.contact.title}</h2>
+              <p className="contact-copy">{SITE_CONTENT.contact.description}</p>
+              <div className="feature-list is-compact">
+                {SITE_CONTENT.contact.promises.map((item) => (
+                  <div key={item} className="feature-item">
+                    <span className="feature-dot" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="contact-details">
+                <h3>{SITE_CONTENT.contact.infoTitle}</h3>
+                {CONTACT_DETAILS.map((item) => (
+                  <div key={item.label} className="contact-detail-row">
+                    <span>{item.label}</span>
+                    <strong>
+                      {item.label === "Email" ? (
+                        <a href={`mailto:${item.value}`}>{item.value}</a>
+                      ) : item.label === "Phone" ? (
+                        <a href={`tel:${item.value}`}>{item.value}</a>
+                      ) : (
+                        item.value
+                      )}
+                    </strong>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
           </div>
         </Reveal>
 
         <Reveal delay={140}>
           <div className="contact-form-card">
-          <h2 className="contact-form-title">{SITE_CONTENT.contact.formTitle}</h2>
-          <p className="contact-form-intro">{SITE_CONTENT.contact.formIntro}</p>
+            <h2 className="contact-form-title">{SITE_CONTENT.contact.formTitle}</h2>
+            <p className="contact-form-intro">{SITE_CONTENT.contact.formIntro}</p>
 
-          <form
-            action="https://formspree.io/f/xgorkrwv"
-            method="POST"
-            className="contact-form-shell"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New enquiry from Ostara Living website"
-            />
+            <form
+              action="https://formspree.io/f/xgorkrwv"
+              method="POST"
+              className="contact-form-shell"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New enquiry from Ostara Living website"
+              />
 
-            <div className="selection-summary">
-              <div className="selection-control">
-                <span>I'm A *</span>
-                <div className="select-wrap form-select-wrap">
-                  <select
-                    className="form-select"
-                    name="user_type"
-                    value={role}
-                    onChange={(event) => handleRoleChange(event.target.value)}
-                    required
-                  >
-                    {ROLE_OPTIONS.map((option) => (
-                      <option key={option}>{option}</option>
-                    ))}
-                  </select>
-                  <span className="select-arrow">▼</span>
+              <div className="selection-summary">
+                <div className="selection-control">
+                  <span>I'm A *</span>
+                  <div className="select-wrap form-select-wrap">
+                    <select
+                      className="form-select"
+                      name="user_type"
+                      value={role}
+                      onChange={(event) => handleRoleChange(event.target.value)}
+                      required
+                    >
+                      {ROLE_OPTIONS.map((option) => (
+                        <option key={option}>{option}</option>
+                      ))}
+                    </select>
+                    <span className="select-arrow">▼</span>
+                  </div>
+                </div>
+                <div className="selection-control">
+                  <span>What Kind Of Support *</span>
+                  <div className="select-wrap form-select-wrap">
+                    <select
+                      className="form-select"
+                      name="service"
+                      value={service}
+                      onChange={(event) => handleSupportChange(event.target.value)}
+                      required
+                    >
+                      {INTEREST_OPTIONS.map((option) => (
+                        <option key={option}>{option}</option>
+                      ))}
+                    </select>
+                    <span className="select-arrow">▼</span>
+                  </div>
                 </div>
               </div>
-              <div className="selection-control">
-                <span>What Kind Of Support *</span>
-                <div className="select-wrap form-select-wrap">
-                  <select
-                    className="form-select"
-                    name="service"
-                    value={service}
-                    onChange={(event) => handleSupportChange(event.target.value)}
-                    required
-                  >
-                    {INTEREST_OPTIONS.map((option) => (
-                      <option key={option}>{option}</option>
-                    ))}
-                  </select>
-                  <span className="select-arrow">▼</span>
-                </div>
-              </div>
-            </div>
 
-            <div className="contact-form-grid">
-              {inputFields.map((field) => (
-                <label
-                  key={field.name}
-                  className={field.wide ? "form-field is-wide" : "form-field"}
-                >
-                  <span className="form-label">{field.label}</span>
-                  <input
-                    className="form-input"
-                    name={field.name}
-                    type={field.type || "text"}
-                    placeholder={field.placeholder}
-                    value={enquiryForm[field.name]}
-                    required={field.required}
-                    onChange={(event) => handleFieldChange(field.name, event.target.value)}
+              <div className="contact-form-grid">
+                {inputFields.map((field) => (
+                  <label
+                    key={field.name}
+                    className={field.wide ? "form-field is-wide" : "form-field"}
+                  >
+                    <span className="form-label">{field.label}</span>
+                    <input
+                      className="form-input"
+                      name={field.name}
+                      type={field.type || "text"}
+                      placeholder={field.placeholder}
+                      value={enquiryForm[field.name]}
+                      required={field.required}
+                      onChange={(event) => handleFieldChange(field.name, event.target.value)}
+                    />
+                  </label>
+                ))}
+                <label className="form-field is-wide">
+                  <span className="form-label">Message *</span>
+                  <textarea
+                    className="form-input form-textarea"
+                    name="message"
+                    placeholder="Tell us what support is needed, preferred schedule, location, and any important notes."
+                    value={enquiryForm.notes}
+                    required
+                    onChange={(event) => handleFieldChange("notes", event.target.value)}
                   />
                 </label>
-              ))}
-              <label className="form-field is-wide">
-                <span className="form-label">Message *</span>
-                <textarea
-                  className="form-input form-textarea"
-                  name="message"
-                  placeholder="Tell us what support is needed, preferred schedule, location, and any important notes."
-                  value={enquiryForm.notes}
-                  required
-                  onChange={(event) => handleFieldChange("notes", event.target.value)}
-                />
-              </label>
-            </div>
+              </div>
 
-            <button type="submit" className="button button-primary submit-button">
-              Send Enquiry
-            </button>
-          </form>
+              <button type="submit" className="button button-primary submit-button">
+                Send Enquiry
+              </button>
+            </form>
           </div>
         </Reveal>
       </div>
@@ -1541,6 +1754,13 @@ export default function App() {
     });
   }, [page]);
 
+  const activeServiceId = page.startsWith("service:")
+    ? page.replace("service:", "")
+    : null;
+  const activeServicePage = activeServiceId
+    ? SERVICE_LANDING_PAGES[activeServiceId]
+    : null;
+
   return (
     <div className="app-shell">
       <Header
@@ -1565,6 +1785,14 @@ export default function App() {
           />
         )}
         {page === "services" && <ServicesPage setPage={setPage} />}
+        {activeServicePage && (
+          <ServiceLandingPage
+            service={activeServicePage}
+            setPage={setPage}
+            setService={setService}
+            setEnquiryForm={setEnquiryForm}
+          />
+        )}
         {page === "contact" && (
           <ContactPage
             enquiryForm={enquiryForm}
@@ -1656,3 +1884,4 @@ export default function App() {
     </div>
   );
 }
+```
