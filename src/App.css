@@ -2093,3 +2093,17 @@
     align-items: flex-start;
   }
 }
+.footer-link-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-link-button:hover {
+  color: #ffffff;
+}
