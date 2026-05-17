@@ -103,9 +103,6 @@ const INTEREST_OPTIONS = [
   "2:1 Support",
   "Life Skills Development",
   "Mentoring & Routine Support",
-  "Support Coordination",
-  "Supported Independent Living (SIL)",
-  "Not Sure / Explore All Services",
   "Other",
 ];
 
