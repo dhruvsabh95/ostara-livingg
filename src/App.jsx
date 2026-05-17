@@ -69,7 +69,6 @@ const SITE_CONTENT = {
       "Self-managed participants",
       "Plan-managed participants",
       "Families and carers",
-      "Support coordinators",
     ],
     contactTitle: "Contact",
     contactLines: [
@@ -1857,10 +1856,29 @@ export default function App() {
           <div className="footer-column">
             <h3>{SITE_CONTENT.footer.supportTitle}</h3>
             <ul className="footer-list">
-              {SITE_CONTENT.footer.supportGroups.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+  {SITE_CONTENT.footer.services.map((item) => {
+    const footerServiceLinks = {
+      "Personal Care": "service:personal-care",
+      "Daily Living Assistance": "service:daily-living-assistance",
+      "Community Participation": "service:community-participation",
+      "Transport Support": "service:transport-support",
+      "Life Skills Development": "service:life-skills-development",
+      "Mentoring & Routine Support": "service:mentoring-routine-support",
+    };
+
+    return (
+      <li key={item}>
+        <button
+          type="button"
+          className="footer-link-button"
+          onClick={() => navigatePage(footerServiceLinks[item] || "services")}
+        >
+          {item}
+        </button>
+      </li>
+    );
+  })}
+</ul>
           </div>
 
           <div className="footer-column">
