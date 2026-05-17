@@ -57,13 +57,15 @@ const SITE_CONTENT = {
       "Built around dignity, routine, independence, and clear communication.",
     servicesTitle: "Services",
     services: [
-      "Personal Care",
-      "Daily Living Assistance",
-      "Community Participation",
-      "Transport Support",
-      "Life Skills Development",
-      "Mentoring & Routine Support",
-    ],
+  "Personal Care",
+  "Daily Living Assistance",
+  "Community Participation",
+  "Transport Support",
+  "Life Skills Development",
+  "Mentoring & Routine Support",
+  "1:1 Support",
+  "2:1 Support",
+],
     supportTitle: "Who We Support",
     supportGroups: [
       "Self-managed participants",
@@ -1855,6 +1857,8 @@ export default function App() {
       "Transport Support": "service:transport-support",
       "Life Skills Development": "service:life-skills-development",
       "Mentoring & Routine Support": "service:mentoring-routine-support",
+      "1:1 Support": "service:one-to-one-support",
+      "2:1 Support": "service:two-to-one-support",
     };
 
     return (
